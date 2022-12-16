@@ -1,4 +1,6 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useInsertionEffect} from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Home()
 {
@@ -8,8 +10,11 @@ function Home()
 
     return(
         <div className="container">
-            <h1 id="WelcomeHeader">Replace with your content</h1>
+            <h1 id="WelcomeHeader">Final Exam</h1>
             <hr/>
+            <Link to={"/about"}>
+                <button className="btn btn-primary btn-large">Lear about us</button>
+            </Link>
         </div>
         
     );
